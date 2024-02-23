@@ -105,6 +105,12 @@
       flake = false;
     };
 
+    # Obsidian
+    obsidian = {
+      url = "github:epwalsh/obsidian.nvim";
+      flake = false;
+    };
+
     # Statuslines
     lualine = {
       url = "github:hoob3rt/lualine.nvim";
@@ -276,6 +282,7 @@
     # Plugin must be same as input name
     availablePlugins = [
       "harpoon-lua"
+      "obsidian"
       "lsp-lines"
       "nvim-treesitter-context"
       "gitsigns-nvim"
@@ -397,6 +404,7 @@
         };
         vim.statusline.lualine.enable = overrideable true;
         vim.harpoon.enable = overrideable true;
+        vim.obsidian.enable = overrideable true;
         vim.theme.enable = true;
         vim.autopairs.enable = overrideable true;
         vim.autocomplete = {
