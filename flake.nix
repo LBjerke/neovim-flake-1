@@ -389,19 +389,19 @@
           nix.enable = overrideable true;
           markdown.enable = overrideable true;
           markdown.glow.enable = overrideable true;
-          html.enable = overrideable isMaximal;
+          html.enable = overrideable true;
           clang.enable = overrideable isMaximal;
-          sql.enable = overrideable isMaximal;
+          sql.enable = overrideable true;
           rust = {
             enable = overrideable isMaximal;
             crates.enable = overrideable true;
           };
           ts.enable = overrideable isMaximal;
-          go.enable = overrideable isMaximal;
+          go.enable = overrideable true;
           zig.enable = overrideable isMaximal;
           python.enable = overrideable isMaximal;
           plantuml.enable = overrideable isMaximal;
-          haskell.enable = overrideable isMaximal;
+          haskell.enable = overrideable true;
 
           # See tidal config
           tidal.enable = overrideable false;
@@ -530,6 +530,7 @@
         }
         // pkgs.lib.optionalAttrs (!(builtins.elem system ["aarch64-darwin" "x86_64-darwin"])) {
           tidal = tidalPkg;
+          maximal = maximalPkg;
         };
     }));
 }
