@@ -27,7 +27,7 @@ in {
             ["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
           },
            signature = {
-              enable = false,
+              enabled = false,
            },
         },
 
