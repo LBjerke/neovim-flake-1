@@ -257,6 +257,13 @@
       url = "github:rcarriga/nvim-notify";
       flake = false;
     };
+
+    # noice
+    noice = {
+      url = "github:folke/noice";
+      flake = false;
+    };
+
     # Tidal cycles
     tidalcycles = {
       url = "github:mitchmindtree/tidalcycles.nix";
@@ -292,6 +299,7 @@
   } @ inputs: let
     # Plugin must be same as input name
     availablePlugins = [
+      "noice"
       "nvim-notify"
       "harpoon-lua"
       "obsidian"

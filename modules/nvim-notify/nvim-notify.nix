@@ -18,7 +18,6 @@ in {
     #   };
 
     vim.luaConfigRC.harpoon = nvim.dag.entryAnywhere ''
-      require("nvim-notify").setup()
     '';
   };
 }

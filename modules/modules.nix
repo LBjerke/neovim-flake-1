@@ -16,6 +16,7 @@
     ./filetree
     ./nvim-notify
     ./visuals
+    ./noice
     ./lsp
     ./languages
     ./treesitter
