@@ -496,6 +496,22 @@
         "type": "gitlab"
       }
     },
+    "noice": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1705952416,
+        "narHash": "sha256-lNCdwB0B5arbTEIHdDoQ19/vQ0UT89AQFwZM+RHqOTg=",
+        "owner": "folke",
+        "repo": "noice.nvim",
+        "rev": "bf67d70bd7265d075191e7812d8eb42b9791f737",
+        "type": "github"
+      },
+      "original": {
+        "owner": "folke",
+        "repo": "noice.nvim",
+        "type": "github"
+      }
+    },
     "nui": {
       "flake": false,
       "locked": {
@@ -914,6 +930,7 @@
         "nil": "nil",
         "nixpkgs": "nixpkgs",
         "nmd": "nmd",
+        "noice": "noice",
         "nui": "nui",
         "null-ls": "null-ls",
         "nvim-autopairs": "nvim-autopairs",

@@ -6,6 +6,7 @@
   modules = [
     ./harpoon
     ./obsidian
+    ./executor-nvim
     ./completion
     ./theme
     ./core

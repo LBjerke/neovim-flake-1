@@ -110,6 +110,11 @@
       url = "github:epwalsh/obsidian.nvim";
       flake = false;
     };
+    # Obsidian
+    executor-nvim = {
+      url = "github:epwalsh/google/executor.nvim";
+      flake = false;
+    };
 
     # Statuslines
     lualine = {
@@ -260,7 +265,7 @@
 
     # noice
     noice = {
-      url = "github:folke/noice";
+      url = "github:folke/noice.nvim";
       flake = false;
     };
 
@@ -299,6 +304,7 @@
   } @ inputs: let
     # Plugin must be same as input name
     availablePlugins = [
+      "executor-nvim"
       "noice"
       "nvim-notify"
       "harpoon-lua"
@@ -426,8 +432,10 @@
         };
         vim.statusline.lualine.enable = overrideable true;
         vim.harpoon.enable = overrideable true;
+        vim.noice.enable = overrideable true;
         vim.obsidian.enable = overrideable true;
         vim.nui.enable = overrideable true;
+        vim.executor-nvim = overrideable true;
         vim.nvim-notify.enable = overrideable true;
         vim.theme.enable = true;
         vim.autopairs.enable = overrideable true;
