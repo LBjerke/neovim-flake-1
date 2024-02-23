@@ -17,7 +17,7 @@ in {
     #    vim.nnoremap = {
     #   };
 
-    vim.luaConfigRC.harpoon = nvim.dag.entryAfter ["nui"] ''
+    vim.luaConfigRC.executor-nvim = nvim.dag.entryAfter ["nui"] ''
       require("executor").setup({})
     '';
   };

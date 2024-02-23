@@ -110,7 +110,7 @@
       url = "github:epwalsh/obsidian.nvim";
       flake = false;
     };
-    # Obsidian
+    # executor-nvim
     executor-nvim = {
       url = "github:google/executor.nvim";
       flake = false;
