@@ -112,7 +112,7 @@
     };
     # Obsidian
     executor-nvim = {
-      url = "github:epwalsh/google/executor.nvim";
+      url = "github:google/executor.nvim";
       flake = false;
     };
 

@@ -6,7 +6,7 @@
 }:
 with lib;
 with builtins; let
-  cfg = config.vim.harpoon;
+  cfg = config.vim.executor-nvim;
 in {
   options.vim.executor-nvim = {
     enable = mkEnableOption "Enable executor-nvim";

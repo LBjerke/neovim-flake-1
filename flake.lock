@@ -177,6 +177,22 @@
         "type": "github"
       }
     },
+    "executor-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1700938934,
+        "narHash": "sha256-Ng6yD3jjpOmt0wP1KJ8RS6DhYjNhaQPzxIfN7C2ZS2w=",
+        "owner": "google",
+        "repo": "executor.nvim",
+        "rev": "2af6072829562922e047ed644fc83749c4b10d92",
+        "type": "github"
+      },
+      "original": {
+        "owner": "google",
+        "repo": "executor.nvim",
+        "type": "github"
+      }
+    },
     "fidget": {
       "flake": false,
       "locked": {
@@ -914,6 +930,7 @@
         "crates-nvim": "crates-nvim",
         "dracula": "dracula",
         "dracula-nvim": "dracula-nvim",
+        "executor-nvim": "executor-nvim",
         "fidget": "fidget",
         "flake-utils": "flake-utils",
         "gitsigns-nvim": "gitsigns-nvim",
