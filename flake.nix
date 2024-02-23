@@ -435,7 +435,7 @@
         vim.noice.enable = overrideable true;
         vim.obsidian.enable = overrideable true;
         vim.nui.enable = overrideable true;
-        vim.executor-nvim = overrideable true;
+        vim.executor-nvim.enable = overrideable true;
         vim.nvim-notify.enable = overrideable true;
         vim.theme.enable = true;
         vim.autopairs.enable = overrideable true;

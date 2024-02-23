@@ -17,7 +17,7 @@ in {
     #    vim.nnoremap = {
     #   };
 
-    vim.luaConfigRC.harpoon =
+    vim.luaConfigRC.nvim-notify =
       nvim.dag.entryAnywhere ''
       '';
   };
