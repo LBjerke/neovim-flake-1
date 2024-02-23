@@ -117,6 +117,12 @@
       flake = false;
     };
 
+    # Nui
+    nui = {
+      url = "github:MunifTanjim/nui.nvim";
+      flake = false;
+    };
+
     # Autocompletes
     nvim-compe = {
       url = "github:hrsh7th/nvim-compe";
@@ -246,6 +252,11 @@
       flake = false;
     };
 
+    # nvim-notify
+    nvim-notify = {
+      url = "github:rcarriga/nvim-notify";
+      flake = false;
+    };
     # Tidal cycles
     tidalcycles = {
       url = "github:mitchmindtree/tidalcycles.nix";
@@ -281,6 +292,7 @@
   } @ inputs: let
     # Plugin must be same as input name
     availablePlugins = [
+      "nvim-notify"
       "harpoon-lua"
       "obsidian"
       "lsp-lines"
@@ -288,6 +300,7 @@
       "gitsigns-nvim"
       "plenary-nvim"
       "nvim-lspconfig"
+      "nui"
       "lspsaga"
       "lspkind"
       "nvim-lightbulb"
@@ -361,6 +374,7 @@
 
           nix.enable = overrideable true;
           markdown.enable = overrideable true;
+          markdown.glow.enable = overrideable true;
           html.enable = overrideable isMaximal;
           clang.enable = overrideable isMaximal;
           sql.enable = overrideable isMaximal;
@@ -405,6 +419,8 @@
         vim.statusline.lualine.enable = overrideable true;
         vim.harpoon.enable = overrideable true;
         vim.obsidian.enable = overrideable true;
+        vim.nui.enable = overrideable true;
+        vim.nvim-notify.enable = overrideable true;
         vim.theme.enable = true;
         vim.autopairs.enable = overrideable true;
         vim.autocomplete = {

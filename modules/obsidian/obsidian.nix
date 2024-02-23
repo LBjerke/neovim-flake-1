@@ -14,11 +14,25 @@ in {
 
   config = mkIf cfg.enable {
     vim.startPlugins = ["obsidian"];
-    vim.nnoremap = {
-    };
+    #    vim.nnoremap = {
+    #   };
 
-    vim.luaConfigRC.harpoon = nvim.dag.entryAnywhere ''
-      require("obsidian").setup()
+    vim.luaConfigRC.harpoon = nvim.dag.entryAfter ["plenary-nvim"] ''
+            require("obsidian").setup({
+        "epwalsh/obsidian.nvim",
+        tag = "*",
+        requires = {
+          "nvim-lua/plenary.nvim",
+
+        },
+            workspaces = {
+              {
+                name = "personal",
+                path = "~/Code/Obsidian",
+              }
+            },
+
+      })
     '';
   };
 }

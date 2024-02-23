@@ -36,12 +36,10 @@ in {
     (mkIf cfg.glow.enable {
       vim.startPlugins = ["glow-nvim"];
 
-      vim.globals = {
-        "glow_binary_path" = "${pkgs.glow}/bin";
-      };
+      vim.luaConfigRC.glow = nvim.dag.entryAnywhere ''
+        require("glow").setup({
+        })
 
-      vim.configRC.glow = nvim.dag.entryAnywhere ''
-        autocmd FileType markdown noremap <leader>p :Glow<CR>
       '';
     })
   ]);

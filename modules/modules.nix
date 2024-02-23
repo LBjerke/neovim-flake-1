@@ -5,13 +5,16 @@
 }: let
   modules = [
     ./harpoon
+    ./obsidian
     ./completion
     ./theme
     ./core
     ./basic
+    ./nui
     ./statusline
     ./tabline
     ./filetree
+    ./nvim-notify
     ./visuals
     ./lsp
     ./languages
