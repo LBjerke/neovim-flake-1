@@ -414,7 +414,7 @@
           lspsaga.enable = overrideable false;
           nvimCodeActionMenu.enable = overrideable true;
           trouble.enable = overrideable true;
-          lspSignature.enable = overrideable false;
+          lspSignature.enable = overrideable true;
         };
         vim.visuals = {
           enable = overrideable true;
